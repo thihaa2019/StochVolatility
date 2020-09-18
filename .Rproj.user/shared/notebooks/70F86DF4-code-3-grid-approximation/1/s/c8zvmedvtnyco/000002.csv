@@ -1,0 +1,5 @@
+"0","grid_data <- grid_data %>%"
+"0","  #mutate(prior=3)"
+"0","  mutate(prior=dbeta(pi_grid,2,2)) %>%"
+"0","  mutate(likelihood = dbinom(x=9, size =10, "
+"0","pi_grid))"

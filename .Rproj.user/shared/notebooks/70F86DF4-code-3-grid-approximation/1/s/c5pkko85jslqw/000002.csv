@@ -1,0 +1,4 @@
+"0","grid_data <- grid_data %>%"
+"0","  mutate(unnormalized = prior *likelihood) %>%"
+"0","  mutate(posterior = "
+"0","unnormalized/sum(unnormalized))"

@@ -1,0 +1,2 @@
+"0","grid_data %>%"
+"0","  summarize(sum(posterior))"

@@ -1,0 +1,116 @@
+---
+output: pdf_document
+---
+
+## Grid Approximation
+
+When it is impossible (or difficult) to specify the posterior we can approximate the posterior. 
+
+Let $\pi \sim \text{Beta}(2,2)$, $x = 9$ and $n = 10$.
+
+In this case we would end up with 
+
+$\pi \sim \text{Beta}(11,3)$
+
+We will try to achieve the same posterior but this time with grid approximation with 6 (and then 101) different pi values.  
+
+```{r message = FALSE}
+library(tidyverse)
+```
+
+
+# Step 1: Define a grid of pi values
+
+```{r}
+pi_grid <-seq(from=0, to =1, length=101)
+grid_data <- data.frame(pi_grid)
+```
+
+
+
+# Step 2: Evaluate the prior & likelihood at each pi
+
+```{r}
+grid_data <- grid_data %>%
+  #mutate(prior=3)
+  mutate(prior=dbeta(pi_grid,2,2)) %>%
+  mutate(likelihood = dbinom(x=9, size =10, 
+pi_grid))
+```
+
+
+# Step 3: Approximate the posterior
+
+```{r}
+grid_data <- grid_data %>%
+  mutate(unnormalized = prior *likelihood) %>%
+  mutate(posterior = 
+unnormalized/sum(unnormalized))
+```
+
+```{r}
+round(grid_data,2)
+```
+
+Check that the approximations sum up to 1
+```{r}
+grid_data %>%
+  summarize(sum(posterior))
+
+```
+
+```{r}
+grid_data %>%
+  ggplot() +
+  aes(x=pi_grid, y=posterior)+
+  geom_point() +
+  geom_segment(aes(x= pi_grid, 
+                   xend= pi_grid,
+                   y=0,
+                   yend = posterior))
+```
+
+
+
+
+
+
+
+
+
+# Step 4: Sample from the discretized posterior
+
+
+```{r}
+set.seed(84735)
+```
+
+
+```{r}
+post_sample <-sample_n(grid_data,
+           size= 10000, 
+           replace= TRUE,
+           weight= posterior)
+           
+```
+
+```{r}
+ggplot(post_sample) + 
+  aes(x= pi_grid) +
+  geom_histogram(aes(y=..density..))+
+  stat_function(fun= dbeta, args= 
+list(11,3)) +
+  xlim(0,1)
+```
+
+
+
+
+
+
+
+
+
+
+
+

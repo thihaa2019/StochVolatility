@@ -1,0 +1,6 @@
+"0","proposal <- rnorm(1, mean = current, sd = 0.3)"
+"0","proposal"
+"1","[1]"
+"1"," 1.065026"
+"1","
+"

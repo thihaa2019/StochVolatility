@@ -1,0 +1,32 @@
+{
+    "id": "7BF702BB",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599504315004.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "expression": "SP500",
+        "caption": "SP500",
+        "totalObservations": 3442,
+        "displayedObservations": 3442,
+        "variables": 1,
+        "cacheKey": "92CC8ED3",
+        "object": "SP500",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=SP500&cache_key=92CC8ED3&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 738436842855227757,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599504315004,
+    "read_only": false,
+    "read_only_alternatives": []
+}

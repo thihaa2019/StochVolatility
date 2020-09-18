@@ -1,0 +1,6 @@
+"0","mh_tourDB(N = 5000, sigma =0.3)
+"
+"2","NaNs produced"
+"2","Error in sample.int(length(x), size, replace, prob) : 
+  NA in probability vector
+"

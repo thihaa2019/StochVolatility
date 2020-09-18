@@ -1,0 +1,1 @@
+"0","hist(params$beta1,xlab = ""Posterior beta1"",main = paste(""Histogram of beta1""))"

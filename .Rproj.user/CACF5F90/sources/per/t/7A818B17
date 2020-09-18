@@ -1,0 +1,32 @@
+{
+    "id": "7A818B17",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599503952561.0,
+    "source_on_save": false,
+    "relative_order": 11,
+    "properties": {
+        "expression": "yfore",
+        "caption": "yfore",
+        "totalObservations": 4000,
+        "displayedObservations": 4000,
+        "variables": 1,
+        "cacheKey": "F7409FBC",
+        "object": "yfore",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=yfore&cache_key=F7409FBC&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2314861393504909858,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599503952561,
+    "read_only": false,
+    "read_only_alternatives": []
+}

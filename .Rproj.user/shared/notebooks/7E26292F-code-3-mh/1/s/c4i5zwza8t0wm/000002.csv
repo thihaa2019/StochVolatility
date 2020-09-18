@@ -1,0 +1,7 @@
+"0","set.seed(4)"
+"0","mh_simulation_1 <- mh_tour(N = 500, sigma =0.3)"
+"0",""
+"0","mh_simulation_1 %>% "
+"0","  #filter(iteration < 10) %>%"
+"0","  ggplot(aes(x = iteration, y = lambda)) +"
+"0","  geom_line()"

@@ -1,0 +1,7 @@
+"0","y <-  list(y = as.numeric(SP500Ret2020), T = length(SP500Ret2020),H=1, "
+"0","           sigma1 = sd(SP500Ret2020))"
+"0","SP500_model <- stan(model_code = garchmodel, data = y,"
+"0","                    chains = 4,"
+"0","                    iter = 1250,"
+"0","                    warmup = 250,"
+"0",")"

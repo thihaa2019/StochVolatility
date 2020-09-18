@@ -1,0 +1,6 @@
+"0",""
+"0","mh_simulation_1 %>% "
+"0","  ggplot(aes(x = lambda)) +"
+"0","  geom_histogram(aes(y = ..density..)) +"
+"0","  stat_function(fun = dgamma, args = list(1,2))"
+"0",""

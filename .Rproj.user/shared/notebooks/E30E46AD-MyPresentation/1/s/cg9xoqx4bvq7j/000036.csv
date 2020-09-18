@@ -1,0 +1,6 @@
+"0","#Use logarithmic formulas to calculated SP 500  return series "
+"0","SP500Ret           <- diff(log(SP500), lag = 1)"
+"0","SP500Ret[is.na(SP500Ret)] <- 0"
+"0","colnames(SP500Ret) <- c('LogReturn')"
+"0","#Visualizing Cleaned Data"
+"0","qqnorm(SP500Ret, main = ""QQ Norm: SP500Ret Applied Logarithmic"")"

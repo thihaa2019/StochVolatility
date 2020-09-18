@@ -1,0 +1,3 @@
+"0",""
+"0","par(mfrow=c(1,3))"
+"0","hist(params$alpha0,xlab = ""Posterior alpha0"",main = paste(""Histogram of alpha0""))"

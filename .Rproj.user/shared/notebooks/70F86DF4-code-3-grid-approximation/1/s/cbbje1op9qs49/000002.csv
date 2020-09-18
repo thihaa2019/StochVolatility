@@ -1,0 +1,5 @@
+"0","post_sample <-sample_n(grid_data,"
+"0","           size= 10000, "
+"0","           replace= TRUE,"
+"0","           weight= posterior)"
+"0","           "

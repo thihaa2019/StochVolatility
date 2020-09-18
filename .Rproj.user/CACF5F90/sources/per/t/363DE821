@@ -1,0 +1,25 @@
+{
+    "id": "363DE821",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599496627191.0,
+    "source_on_save": false,
+    "relative_order": 11,
+    "properties": {
+        "id": "ac7ab63d39ae48acaf63a79ff353fd73",
+        "name": "SP500_model",
+        "title": "SP500_model"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2561309767104,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599496627191,
+    "read_only": false,
+    "read_only_alternatives": []
+}

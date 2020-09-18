@@ -1,0 +1,6 @@
+"0","ggplot(post_sample) + "
+"0","  aes(x= pi_grid) +"
+"0","  geom_histogram(aes(y=..density..))+"
+"0","  stat_function(fun= dbeta, args= "
+"0","list(11,3)) +"
+"0","  xlim(0,1)"

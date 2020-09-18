@@ -1,0 +1,8 @@
+"0","grid_data %>%"
+"0","  ggplot() +"
+"0","  aes(x=pi_grid, y=posterior)+"
+"0","  geom_point() +"
+"0","  geom_segment(aes(x= pi_grid, "
+"0","                   xend= pi_grid,"
+"0","                   y=0,"
+"0","                   yend = posterior))"

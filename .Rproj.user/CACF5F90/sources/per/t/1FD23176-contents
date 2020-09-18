@@ -1,0 +1,79 @@
+---
+title: "Pstat140FinalPrep"
+author: "Nathan Ng"
+date: "9/7/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bayesplot)
+library(bayesrules)
+```
+
+## quiz-1-bayes-rv
+
+
+
+```{r }
+(f4.1=0.2*dbinom(4,6,0.1)+0.45*dbinom(4,6,0.25)+0+0.35*dbinom(4,6,0.4))
+0.2*dbinom(4,6,0.1)/f4.1
+.45*dbinom(4,6,0.25)/f4.1
+0.35*dbinom(4,6,0.4)/f4.1
+
+```
+
+## quiz-2-gamma-poisson
+```{r}
+
+```
+
+## quiz-2-beta-binomial
+```{r}
+21/.3043478-24
+summarize_beta_binomial(6,18,x=15,n=45)
+(6-1)/(6+18-2)
+```
+
+## Quiz 2-Beta-prior
+```{r }
+
+plot_beta(5,8) 
+plot_beta(14,20)
+summarize_beta(13.5,20)
+```
+
+##quiz-3-mh
+```{r}
+
+```
+
+##Winter final
+
+## Q1
+```{r}
+(pnorm(0,3.4,0.2)/(1-pnorm(0,3.4,0.2)))/(pnorm(0,0.5,0.3)/(1-pnorm(0,0.5,0.3)))
+
+```
+
+## Q2
+```{r}
+set.seed(84735)
+rnorm(1,6.78+.24*10,.18)
+```
+
+## Q3
+```{r}
+
+```
+
+## Q4
+
+
+## Q5
+
+
+## Q6
+The plot shown above is quite ideal. It exhibits rapid up-and-down variation with no long-term trends or drifts. If we were to mentally break up this plot into a few horizontal sections, the trace within any section would not look much different from the trace in any other section. This indicates that the convergence in distribution takes place rapidly. Long-term trends or drifts in the plot indicate slower convergence. (Note that "long-term" is relative to the horizontal scale of this plot, which depends on the number of samples. As we take more samples, the trace plot gets squeezed together like an accordion, and slow drifts or trends eventually begin to look like rapid up-and-down variation.) The rapid up-and-down motion means that the sampled value at any iteration is unrelated to the sampled value k iterations later, for values of k that are small relative to the total number of samples.
+
+

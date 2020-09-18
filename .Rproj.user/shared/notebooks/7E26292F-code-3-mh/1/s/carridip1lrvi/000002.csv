@@ -1,0 +1,8 @@
+"0","next_stop <- sample(c(proposal, current), "
+"0","                    size = 1, "
+"0","                    prob = c(alpha, 1-alpha))"
+"0","next_stop"
+"1","[1]"
+"1"," 1.065026"
+"1","
+"

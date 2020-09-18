@@ -1,0 +1,32 @@
+{
+    "id": "310FFEA6",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599496721820.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "expression": "spred",
+        "caption": "spred",
+        "totalObservations": 4000,
+        "displayedObservations": 4000,
+        "variables": 170,
+        "cacheKey": "478EC24C",
+        "object": "spred",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=spred&cache_key=478EC24C&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7599662079110377506,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599496721820,
+    "read_only": false,
+    "read_only_alternatives": []
+}
